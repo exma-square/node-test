@@ -1,4 +1,6 @@
-const http = require('http')
+const http = require('http');
+const fs = require('fs');
 http.createServer((req, res) => {
-  return res.end('hello world');
+  const text = fs.readFileSync('./index.html', 'utf8');
+  return res.end(text);
 }).listen(8080)
