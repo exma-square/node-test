@@ -1,8 +1,6 @@
 applications:
-- name: mysample
+- name: node-test
   buildpacks:
   - nodejs_buildpack
   random-route: true
   command: npm run start
-  services:
-  env:
