@@ -1,6 +1,5 @@
 applications:
-- name: node-test
-  command: node index.js
+- name: mysample
   buildpacks:
   - nodejs_buildpack
   random-route: true
